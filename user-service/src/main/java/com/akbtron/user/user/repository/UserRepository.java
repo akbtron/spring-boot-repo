@@ -1,0 +1,9 @@
+package com.akbtron.user.user.repository;
+
+import com.akbtron.user.user.entity.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<User,Long> {
+
+    User findByUserId(Long userId);
+}
